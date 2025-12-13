@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2 Instructional Page</title>
+  </head>
+  <body>
+    <!-- MAIN CONTAINER: Centered, max-width for readability -->
+    <div
+      style="
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      "
+    >
+      <!-- HEADER BANNER -->
+      <div
+        style="
+          background-color: #2d3b45;
+          color: #ffffff;
+          padding: 20px;
+          border-radius: 8px 8px 0 0;
+          border-bottom: 5px solid #27ae60;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <h1 style="margin: 0; font-size: 1.8rem; font-weight: 600">
+              Day 2: Input & Variables
+            </h1>
+            <p style="margin: 5px 0 0 0; font-size: 1.1rem; opacity: 0.9">
+              Getting to Know You
+            </p>
+          </div>
+          <div
+            style="
+              background-color: #27ae60;
+              padding: 5px 15px;
+              border-radius: 20px;
+              font-weight: bold;
+              font-size: 0.9rem;
+            "
+          >
+            Week 1
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT WRAPPER -->
+      <div
+        style="
+          border: 1px solid #e0e0e0;
+          border-top: none;
+          border-radius: 0 0 8px 8px;
+          padding: 30px;
+          background-color: #ffffff;
+        "
+      >
+        <!-- INTRO / CONTEXT -->
+        <p style="font-size: 1.1rem; margin-top: 0">
+          Yesterday, we learned how to make the computer <em>talk</em> using
+          <code>print()</code>. Today, we are going to learn how to make the
+          computer <em>listen</em> using <code>input()</code>, and then remember
+          what we said using <strong>Variables</strong>.
+        </p>
+
+        <!-- VIDEO & RESOURCE LINKS -->
+        <div
+          style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=b5tFeJ0Ol2Y"
+            target="_blank"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #c4302b;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">▶</span> Watch
+            Day 2 Tutorial
+          </a>
+          <a
+            href="https://replit.com/@jiansuphd/day2100-days"
+            target="_blank"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #0e1525;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">&lt;/&gt;</span>
+            Open Day 2 Replit
+          </a>
+        </div>
+
+        <!-- CONCEPT BLOCK: VARIABLES -->
+        <div
+          style="
+            background-color: #f8f9fa;
+            border-left: 5px solid #3498db;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 0 8px 8px 0;
+          "
+        >
+          <h2 style="color: #2c3e50; margin-top: 0">📦 What is a Variable?</h2>
+          <p>
+            Think of <code>input()</code> like someone handing you an object. If
+            you don't have anywhere to put it, you have to drop it immediately.
+          </p>
+          <p>
+            A <strong>variable</strong> is like a box with a label on it. We can
+            take the input and store it in the box to use later.
+          </p>
+          <div
+            style="
+              margin-top: 15px;
+              background: white;
+              padding: 15px;
+              border: 1px dashed #ccc;
+            "
+          >
+            <strong>Naming Rules:</strong> You can give a variable almost any
+            name, but:
+            <ul style="margin-bottom: 0">
+              <li>No spaces allowed!</li>
+              <li>Use <code>underscores_between_words</code></li>
+              <li>Use <code>camelCaseToMakeItReadable</code></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SYNTAX PREVIEW SECTION -->
+        <div style="margin-bottom: 40px">
+          <h2
+            style="
+              color: #2d3b45;
+              border-bottom: 1px solid #ddd;
+              padding-bottom: 10px;
+            "
+          >
+            💻 Syntax: Capturing Input
+          </h2>
+          <p>Delete your old code in <code>main.py</code> and try this:</p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 20px">
+            <!-- Code Block -->
+            <div
+              style="
+                flex: 2;
+                min-width: 300px;
+                background-color: #1c2333;
+                color: #dcdcdc;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: 'Consolas', 'Monaco', monospace;
+                font-size: 0.95rem;
+                border: 1px solid #444;
+              "
+            >
+              <span style="color: #9cdcfe">myName</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"What's your name?: "</span
+              >)<br />
+              <span style="color: #9cdcfe">myAge</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"How old are you? :"</span
+              >)<br />
+              <span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Gee, that's REALLY OLD"</span
+              >)<br />
+              <span style="color: #9cdcfe">replit</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"Do you like Replit?"</span
+              >)<br />
+              <span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"OF COURSE YOU DO!"</span
+              >)
+            </div>
+
+            <!-- Explanation -->
+            <div style="flex: 1; min-width: 250px; font-size: 0.95rem">
+              <p><strong>Breakdown:</strong></p>
+              <ul style="padding-left: 20px">
+                <li style="margin-bottom: 10px">
+                  <code>myName</code> is the <strong>Variable</strong> (the
+                  box).
+                </li>
+                <li style="margin-bottom: 10px">
+                  <code>=</code> is the <strong>Assignment</strong> operator
+                  (putting the value in the box).
+                </li>
+                <li style="margin-bottom: 10px">
+                  <code>input(...)</code> is the
+                  <strong>Function</strong> (getting the value from the user).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHALLENGE SECTION -->
+        <div
+          style="
+            margin-top: 40px;
+            border-top: 2px dashed #ccc;
+            padding-top: 30px;
+          "
+        >
+          <h2 style="color: #d35400; margin-top: 0">
+            🔥 Day 2 Challenge: "Getting to Know You"
+          </h2>
+          <p>
+            Now, let's put it all together. Write a program that asks the user
+            for their name, food, music, and location, and then prints a
+            sentence about them.
+          </p>
+
+          <div
+            style="
+              background-color: #fff8e1;
+              padding: 20px;
+              border-radius: 8px;
+              border: 1px solid #ffe0b2;
+            "
+          >
+            <strong>Your Goal Code:</strong>
+            <pre
+              style="
+                margin: 15px 0 0 0;
+                font-family: 'Consolas', monospace;
+                white-space: pre-wrap;
+                color: #555;
+              "
+            >
+print("Getting to know you!")
+YourName = input("What is your name?")
+Hungry = input("What is your favorite food?")
+Music = input("What is your favorite music?")
+WhereAreYou = input("Where are you?")
+
+print("You are")
+print(YourName)
+print("You're probably hungry for")
+print(Hungry)
+</pre
+            >
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div style="margin-top: 40px; text-align: center">
+          <h3 style="color: #2d3b45">Finished the Code?</h3>
+          <p>Now, what do we do with this?</p>
+          <a
+            href="#"
+            style="
+              display: inline-block;
+              background-color: #27ae60;
+              color: white;
+              padding: 10px 25px;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              margin-top: 10px;
+            "
+            >Mark Day 2 Complete &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

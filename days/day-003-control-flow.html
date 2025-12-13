@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 3 Instructional Page</title>
+  </head>
+  <body>
+    <!-- MAIN CONTAINER: Centered, max-width for readability -->
+    <div
+      style="
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      "
+    >
+      <!-- HEADER BANNER -->
+      <div
+        style="
+          background-color: #2d3b45;
+          color: #ffffff;
+          padding: 20px;
+          border-radius: 8px 8px 0 0;
+          border-bottom: 5px solid #9b59b6;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <h1 style="margin: 0; font-size: 1.8rem; font-weight: 600">
+              Day 3: Concatenate
+            </h1>
+            <p style="margin: 5px 0 0 0; font-size: 1.1rem; opacity: 0.9">
+              The Power of Joining Text
+            </p>
+          </div>
+          <div
+            style="
+              background-color: #9b59b6;
+              padding: 5px 15px;
+              border-radius: 20px;
+              font-weight: bold;
+              font-size: 0.9rem;
+            "
+          >
+            Week 1
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT WRAPPER -->
+      <div
+        style="
+          border: 1px solid #e0e0e0;
+          border-top: none;
+          border-radius: 0 0 8px 8px;
+          padding: 30px;
+          background-color: #ffffff;
+        "
+      >
+        <!-- INTRO / CONTEXT -->
+        <div
+          style="
+            border-left: 4px solid #9b59b6;
+            padding-left: 20px;
+            margin-bottom: 30px;
+          "
+        >
+          <h2 style="color: #2d3b45; margin-top: 0">Concatenate?</h2>
+          <p style="font-size: 1.1rem; margin-bottom: 15px">
+            Yeah, big word. All it really means is
+            <strong>combining text</strong> (strings) and
+            <strong>variables</strong> together into single sentences! 😲🤯
+          </p>
+          <p>You can make your input and output look super pretty now! 🥳</p>
+        </div>
+
+        <!-- VIDEO & RESOURCE LINKS -->
+        <div
+          style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=G7r_1NQrSm0&t=1s"
+            target="_blank"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #c4302b;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">▶</span> Watch
+            Day 3 Tutorial
+          </a>
+          <a
+            href="https://replit.com/@jiansuphd/day-3100-days"
+            target="_blank"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #0e1525;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">&lt;/&gt;</span>
+            Open Day 3 Replit
+          </a>
+        </div>
+
+        <!-- CONCEPT BLOCK: PRINT SUPER POWER -->
+        <div
+          style="
+            background-color: #f3e5f5;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+          "
+        >
+          <h3
+            style="
+              color: #8e44ad;
+              margin-top: 0;
+              border-bottom: 1px solid #d7bde2;
+              padding-bottom: 10px;
+            "
+          >
+            🦸 The Print Super-Power
+          </h3>
+          <p>You just made a full sentence, right? But how did it work?</p>
+          <p>
+            It turns out <code>print</code> has a super-power. We can give it as
+            <strong>many</strong> different things to print as we want.
+          </p>
+          <div
+            style="
+              background: white;
+              padding: 15px;
+              border: 1px dashed #8e44ad;
+              border-radius: 5px;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Rule: Put a comma <code>,</code> between every different thing
+            inside the <code>()</code>.
+          </div>
+        </div>
+
+        <!-- SYNTAX PREVIEW SECTION -->
+        <div style="margin-bottom: 40px">
+          <h2
+            style="
+              color: #2d3b45;
+              border-bottom: 1px solid #ddd;
+              padding-bottom: 10px;
+            "
+          >
+            💻 Syntax: The Comma Trick
+          </h2>
+          <p>
+            Delete any old code in <code>main.py</code> and try this example:
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 20px">
+            <!-- Code Block -->
+            <div
+              style="
+                flex: 2;
+                min-width: 300px;
+                background-color: #1c2333;
+                color: #dcdcdc;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: 'Consolas', 'Monaco', monospace;
+                font-size: 0.95rem;
+                border: 1px solid #444;
+              "
+            >
+              <span style="color: #9cdcfe">myName</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"What's your name? "</span
+              >)<br />
+              <span style="color: #9cdcfe">myLunch</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"What are you having for lunch? "</span
+              >)<br />
+              <span style="color: #dcdcaa">print</span>(<span
+                style="color: #9cdcfe"
+                >myName</span
+              >,
+              <span style="color: #ce9178"
+                >"is going to be chowing down on"</span
+              >, <span style="color: #9cdcfe">myLunch</span>,
+              <span style="color: #ce9178">"very soon!"</span>)
+            </div>
+
+            <!-- Explanation -->
+            <div style="flex: 1; min-width: 250px; font-size: 0.95rem">
+              <p><strong>What happens?</strong></p>
+              <ul style="padding-left: 20px">
+                <li style="margin-bottom: 10px">
+                  The computer prints the value of <code>myName</code>.
+                </li>
+                <li style="margin-bottom: 10px">
+                  It automatically adds a space where the comma is.
+                </li>
+                <li style="margin-bottom: 10px">It prints the text string.</li>
+                <li style="margin-bottom: 10px">
+                  It adds another space, then <code>myLunch</code>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- EXERCISE BLOCK -->
+        <div style="margin-bottom: 40px">
+          <h3 style="color: #2d3b45">👉 Let's Go BIG</h3>
+          <p>
+            You can combine as many things as you want in any order! Try this
+            wacky sentence generator:
+          </p>
+          <div
+            style="
+              background-color: #1c2333;
+              color: #dcdcdc;
+              padding: 15px;
+              border-radius: 8px;
+              font-family: 'Consolas', 'Monaco', monospace;
+              font-size: 0.9rem;
+            "
+          >
+            <span style="color: #9cdcfe">number</span> =
+            <span style="color: #dcdcaa">input</span>(<span
+              style="color: #ce9178"
+              >"Give me a number: "</span
+            >)<br />
+            <span style="color: #9cdcfe">group</span> =
+            <span style="color: #dcdcaa">input</span>(<span
+              style="color: #ce9178"
+              >"Give me a collective noun for a group of things: "</span
+            >)<br />
+            <span style="color: #9cdcfe">thing</span> =
+            <span style="color: #dcdcaa">input</span>(<span
+              style="color: #ce9178"
+              >"Give me the name of a weird or wacky thing: "</span
+            >)<br />
+            <span style="color: #dcdcaa">print</span>(<span
+              style="color: #ce9178"
+              >"No I don't think that"</span
+            >, <span style="color: #9cdcfe">number</span>,
+            <span style="color: #ce9178">"is a"</span>,
+            <span style="color: #9cdcfe">group</span>,
+            <span style="color: #ce9178">"of"</span>,
+            <span style="color: #9cdcfe">thing</span>,
+            <span style="color: #ce9178">". That's just odd."</span>)
+          </div>
+        </div>
+
+        <!-- CHALLENGE SECTION -->
+        <div
+          style="
+            margin-top: 40px;
+            border-top: 2px dashed #ccc;
+            padding-top: 30px;
+          "
+        >
+          <h2 style="color: #d35400; margin-top: 0">
+            🔥 Day 3 Challenge: "Tonight's Dinner"
+          </h2>
+          <p>
+            Create a program that helps someone decide on a crazy dinner plan.
+            Use the variables below to build your story.
+          </p>
+
+          <div
+            style="
+              background-color: #fff8e1;
+              padding: 20px;
+              border-radius: 8px;
+              border: 1px solid #ffe0b2;
+            "
+          >
+            <strong>Starter Code:</strong>
+            <pre
+              style="
+                margin: 15px 0 0 0;
+                font-family: 'Consolas', monospace;
+                white-space: pre-wrap;
+                color: #555;
+              "
+            >
+food = input("Name a type of food: ")
+plant = input("Name a plant: ")
+cookingType = input("What is a way to cook something?")
+burntFood = input("How do you describe burnt food?")
+householdItem = input("Name something in your house: ")
+
+print()
+print("Tonight's dinner:")
+# Your goal: combine all these variables into one print statement!
+</pre
+            >
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div style="margin-top: 40px; text-align: center">
+          <h3 style="color: #2d3b45">Done?</h3>
+          <p>Share your crazy dinner sentences with the community!</p>
+          <a
+            href="#"
+            style="
+              display: inline-block;
+              background-color: #9b59b6;
+              color: white;
+              padding: 10px 25px;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              margin-top: 10px;
+            "
+            >Mark Day 3 Complete &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
