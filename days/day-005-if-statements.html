@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 5 — If Statements</title>
+  </head>
+  <body>
+    <!-- MAIN CONTAINER: Centered, max-width for readability -->
+    <div
+      style="
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      "
+    >
+      <!-- BACK LINK -->
+      <div style="padding: 10px 0">
+        <a
+          href="../index.html"
+          style="text-decoration: none; color: #0056b3; font-weight: 500"
+          >&larr; Back to Home</a
+        >
+      </div>
+
+      <!-- HEADER BANNER -->
+      <div
+        style="
+          background-color: #2d3b45;
+          color: #ffffff;
+          padding: 20px;
+          border-radius: 8px 8px 0 0;
+          border-bottom: 5px solid #e74c3c;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <h1 style="margin: 0; font-size: 1.8rem; font-weight: 600">
+              Day 5: If Statements
+            </h1>
+            <p style="margin: 5px 0 0 0; font-size: 1.1rem; opacity: 0.9">
+              Making Decisions with Code
+            </p>
+          </div>
+          <div
+            style="
+              background-color: #e74c3c;
+              padding: 5px 15px;
+              border-radius: 20px;
+              font-weight: bold;
+              font-size: 0.9rem;
+            "
+          >
+            Week 1
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT WRAPPER -->
+      <div
+        style="
+          border: 1px solid #e0e0e0;
+          border-top: none;
+          border-radius: 0 0 8px 8px;
+          padding: 30px;
+          background-color: #ffffff;
+        "
+      >
+        <!-- INTRO / CONTEXT -->
+        <div
+          style="
+            border-left: 4px solid #e74c3c;
+            padding-left: 20px;
+            margin-bottom: 30px;
+          "
+        >
+          <h2 style="color: #2d3b45; margin-top: 0">Asking Questions</h2>
+          <p style="font-size: 1.1rem; margin-bottom: 15px">
+            <strong>If Statements</strong> are a bit like asking a question. You
+            are telling the computer: <em>if</em> something is true,
+            <em>then</em> do this specific block of code.
+          </p>
+          <p>
+            This allows your programs to react differently depending on what the
+            user types! 🤖💬
+          </p>
+        </div>
+
+        <!-- VIDEO & RESOURCE LINKS -->
+        <div
+          style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=Wmn9yze6m5U"
+            target="_blank"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #c4302b;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">▶</span> Watch
+            Day 5 Tutorial
+          </a>
+          <a
+            href="https://replit.com/@jiansuphd/day5100-days"
+            target="_blank"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #0e1525;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">&lt;/&gt;</span>
+            Open Day 5 Replit
+          </a>
+        </div>
+
+        <!-- CONCEPT BLOCK: CONDITIONS -->
+        <div
+          style="
+            background-color: #fdedec;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+          "
+        >
+          <h3
+            style="
+              color: #c0392b;
+              margin-top: 0;
+              border-bottom: 1px solid #e6b0aa;
+              padding-bottom: 10px;
+            "
+          >
+            ❓ Is this equal?
+          </h3>
+          <p>
+            When we want to check if two things are <strong>exactly</strong> the
+            same, we use the double equals sign <code>==</code>.
+          </p>
+          <div
+            style="
+              background: white;
+              padding: 15px;
+              border: 1px dashed #c0392b;
+              border-radius: 5px;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            <code style="color: #c0392b">myName == "David"</code><br />
+            Is the variable <em>myName</em> the same as the string "David"?
+          </div>
+        </div>
+
+        <!-- SYNTAX PREVIEW SECTION -->
+        <div style="margin-bottom: 40px">
+          <h2
+            style="
+              color: #2d3b45;
+              border-bottom: 1px solid #ddd;
+              padding-bottom: 10px;
+            "
+          >
+            💻 Syntax: The Indent Matters
+          </h2>
+          <p>
+            Here is how we write it. Pay close attention to the
+            <strong>colon</strong> <code>:</code> and the
+            <strong>indentation</strong>.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 20px">
+            <!-- Code Block -->
+            <div
+              style="
+                flex: 2;
+                min-width: 300px;
+                background-color: #1c2333;
+                color: #dcdcdc;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: 'Consolas', 'Monaco', monospace;
+                font
