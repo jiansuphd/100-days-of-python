@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 6 — Elif Statements</title>
+  </head>
+  <body>
+    <!-- MAIN CONTAINER: Centered, max-width for readability -->
+    <div
+      style="
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      "
+    >
+      <!-- BACK LINK -->
+      <div style="padding: 10px 0">
+        <a
+          href="../index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: #0056b3; font-weight: 500"
+          >&larr; Back to Home</a
+        >
+      </div>
+
+      <!-- HEADER BANNER -->
+      <div
+        style="
+          background-color: #2d3b45;
+          color: #ffffff;
+          padding: 20px;
+          border-radius: 8px 8px 0 0;
+          border-bottom: 5px solid #3498db;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <h1 style="margin: 0; font-size: 1.8rem; font-weight: 600">
+              Day 6: Elif Statements
+            </h1>
+            <p style="margin: 5px 0 0 0; font-size: 1.1rem; opacity: 0.9">
+              Handling Multiple Options
+            </p>
+          </div>
+          <div
+            style="
+              background-color: #3498db;
+              padding: 5px 15px;
+              border-radius: 20px;
+              font-weight: bold;
+              font-size: 0.9rem;
+            "
+          >
+            Week 1
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT WRAPPER -->
+      <div
+        style="
+          border: 1px solid #e0e0e0;
+          border-top: none;
+          border-radius: 0 0 8px 8px;
+          padding: 30px;
+          background-color: #ffffff;
+        "
+      >
+        <!-- INTRO / CONTEXT -->
+        <div
+          style="
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin-bottom: 30px;
+          "
+        >
+          <h2 style="color: #2d3b45; margin-top: 0">What the elif is this?</h2>
+          <p style="font-size: 1.1rem; margin-bottom: 15px">
+            The <code>elif</code> command (which stands for 'else if') allows
+            you to ask 2, 3, 4, or 142 questions using the same input!
+          </p>
+          <p>
+            You can have as many <code>elif</code> statements as you want, but
+            they <strong>must</strong> go between <code>if</code> and
+            <code>else</code> and have the same indentation.
+          </p>
+        </div>
+
+        <!-- VIDEO & RESOURCE LINKS -->
+        <div
+          style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=Dm8lRtcnh0o"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #c4302b;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">▶</span> Watch
+            Day 6 Tutorial
+          </a>
+          <a
+            href="https://replit.com/@jiansuphd/day6100-days"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #0e1525;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">&lt;/&gt;</span>
+            Open Day 6 Replit
+          </a>
+        </div>
+
+        <!-- CONCEPT BLOCK: SECURE LOGIN -->
+        <div
+          style="
+            background-color: #ebf5fb;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+          "
+        >
+          <h3
+            style="
+              color: #2980b9;
+              margin-top: 0;
+              border-bottom: 1px solid #aed6f1;
+              padding-bottom: 10px;
+            "
+          >
+            🔐 Example: Secure Login
+          </h3>
+          <p>
+            Here is how we check for multiple users. Notice how the
+            <code>print</code> statements inside the <code>elif</code> command
+            line up with the others.
+          </p>
+
+          <div
+            style="
+              background-color: #1c2333;
+              color: #dcdcdc;
+              padding: 15px;
+              border-radius: 8px;
+              font-family: 'Consolas', 'Monaco', monospace;
+              font-size: 0.95rem;
+              border: 1px solid #444;
+              overflow-x: auto;
+            "
+          >
+            <span style="color: #dcdcaa">print</span>(<span
+              style="color: #ce9178"
+              >"Secure Login"</span
+            >)<br />
+            <span style="color: #9cdcfe">username</span> =
+            <span style="color: #dcdcaa">input</span>(<span
+              style="color: #ce9178"
+              >"What is your username? "</span
+            >)<br />
+            <span style="color: #9cdcfe">password</span> =
+            <span style="color: #dcdcaa">input</span>(<span
+              style="color: #ce9178"
+              >"What is your password? "</span
+            >)<br /><br />
+
+            <span style="color: #c586c0">if</span>
+            <span style="color: #9cdcfe">username</span> ==
+            <span style="color: #ce9178">"David"</span>
+            <span style="color: #c586c0">and</span>
+            <span style="color: #9cdcfe">password</span> ==
+            <span style="color: #ce9178">"PyTh0nR*cks"</span>:<br />
+            &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+              style="color: #ce9178"
+              >"Welcome, David! You are looking nice today!"</span
+            >)<br />
+            <span style="color: #c586c0">elif</span>
+            <span style="color: #9cdcfe">username</span> ==
+            <span style="color: #ce9178">"Becky"</span>
+            <span style="color: #c586c0">and</span>
+            <span style="color: #9cdcfe">password</span> ==
+            <span style="color: #ce9178">"Repl!t4evEr"</span>:<br />
+            &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+              style="color: #ce9178"
+              >"Hi Becky! Love your hair today!"</span
+            >)<br />
+            <span style="color: #c586c0">elif</span>
+            <span style="color: #9cdcfe">username</span> ==
+            <span style="color: #ce9178">"Bill"</span>
+            <span style="color: #c586c0">and</span>
+            <span style="color: #9cdcfe">password</span> ==
+            <span style="color: #ce9178">"SmashTHEb*gs!"</span>:<br />
+            &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+              style="color: #ce9178"
+              >"Yo! Bill! What up?!"</span
+            >)<br />
+            <span style="color: #c586c0">else</span>:<br />
+            &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+              style="color: #ce9178"
+              >"You do not have access. Go away!"</span
+            >)
+          </div>
+        </div>
+
+        <!-- SYNTAX PREVIEW SECTION -->
+        <div style="margin-bottom: 40px">
+          <h2
+            style="
+              color: #2d3b45;
+              border-bottom: 1px solid #ddd;
+              padding-bottom: 10px;
+            "
+          >
+            💻 Syntax: Where does it go?
+          </h2>
+          <p>
+            An <code>elif</code> statement must go <strong>between</strong> the
+            <code>if</code> and <code>else</code> statements.
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 20px">
+            <!-- Code Block -->
+            <div
+              style="
+                flex: 2;
+                min-width: 300px;
+                background-color: #1c2333;
+                color: #dcdcdc;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: 'Consolas', 'Monaco', monospace;
+                font-size: 0.95rem;
+                border: 1px solid #444;
+              "
+            >
+              <span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"SECURE LOGIN"</span
+              >)<br />
+              <span style="color: #9cdcfe">username</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"Username > "</span
+              >)<br /><br />
+              <span style="color: #c586c0">if</span>
+              <span style="color: #9cdcfe">username</span> ==
+              <span style="color: #ce9178">"mark"</span>:<br />
+              &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Welcome Mark!"</span
+              >)<br />
+              <span style="color: #c586c0">elif</span>
+              <span style="color: #9cdcfe">username</span> ==
+              <span style="color: #ce9178">"suzanne"</span>:<br />
+              &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Hey there Suzanne!"</span
+              >)<br />
+              <span style="color: #c586c0">else</span>:<br />
+              &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Go away!"</span
+              >)
+            </div>
+
+            <!-- Explanation -->
+            <div style="flex: 1; min-width: 250px; font-size: 0.95rem">
+              <p><strong>Common Errors:</strong></p>
+              <ul style="padding-left: 20px">
+                <li style="margin-bottom: 10px">
+                  <strong>Indentation:</strong> The <code>elif</code> keyword
+                  must be aligned with <code>if</code> and <code>else</code>. It
+                  cannot be indented!
+                </li>
+                <li style="margin-bottom: 10px">
+                  <strong>Order:</strong> You cannot put an <code>elif</code>
+                  <em>after</em> the <code>else</code>. The <code>else</code> is
+                  always the final stop.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHALLENGE SECTION -->
+        <div
+          style="
+            margin-top: 40px;
+            border-top: 2px dashed #ccc;
+            padding-top: 30px;
+          "
+        >
+          <h2 style="color: #d35400; margin-top: 0">
+            🔥 Day 6 Challenge: Login System
+          </h2>
+          <p>
+            Your goal is to build a robust login system. Create a program that
+            asks for a username and password.
+          </p>
+          <ul style="margin-bottom: 20px">
+            <li>Create at least <strong>3 different users</strong>.</li>
+            <li>Give each user a unique personal greeting.</li>
+            <li>If the user is not recognized, tell them to go away!</li>
+          </ul>
+
+          <div
+            style="
+              background-color: #fff8e1;
+              padding: 20px;
+              border-radius: 8px;
+              border: 1px solid #ffe0b2;
+            "
+          >
+            <strong>Example Output to Aim For:</strong>
+            <pre
+              style="
+                margin: 15px 0 0 0;
+                font-family: 'Consolas', monospace;
+                white-space: pre-wrap;
+                color: #555;
+              "
+            >
+MY LOGIN SYSTEM
++++++++++++++++++
+Username > David
+Password > 1234
+Hello David! Why is your password so weak?
+
+Username > Suzanne
+Password > StrongP@ss
+Suzanne! Great to see you again.
+
+Username > Hacker
+Password > ...
+I don't know you. Get out of here!
+</pre
+            >
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div style="margin-top: 40px; text-align: center">
+          <h3 style="color: #2d3b45">You are a Pro!</h3>
+          <p>
+            How easy was that? You'll be mastering complex logic in no time.
+          </p>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              display: inline-block;
+              background-color: #3498db;
+              color: white;
+              padding: 10px 25px;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              margin-top: 10px;
+            "
+            >Mark Day 6 Complete &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
