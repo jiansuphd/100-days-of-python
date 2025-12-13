@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7 — Nesting</title>
+  </head>
+  <body>
+    <!-- MAIN CONTAINER: Centered, max-width for readability -->
+    <div
+      style="
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      "
+    >
+      <!-- BACK LINK -->
+      <div style="padding: 10px 0">
+        <a
+          href="../index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: #0056b3; font-weight: 500"
+          >&larr; Back to Home</a
+        >
+      </div>
+
+      <!-- HEADER BANNER -->
+      <div
+        style="
+          background-color: #2d3b45;
+          color: #ffffff;
+          padding: 20px;
+          border-radius: 8px 8px 0 0;
+          border-bottom: 5px solid #f39c12;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <h1 style="margin: 0; font-size: 1.8rem; font-weight: 600">
+              Day 7: Nesting
+            </h1>
+            <p style="margin: 5px 0 0 0; font-size: 1.1rem; opacity: 0.9">
+              If within If (Inception Code!)
+            </p>
+          </div>
+          <div
+            style="
+              background-color: #f39c12;
+              padding: 5px 15px;
+              border-radius: 20px;
+              font-weight: bold;
+              font-size: 0.9rem;
+            "
+          >
+            Week 1
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT WRAPPER -->
+      <div
+        style="
+          border: 1px solid #e0e0e0;
+          border-top: none;
+          border-radius: 0 0 8px 8px;
+          padding: 30px;
+          background-color: #ffffff;
+        "
+      >
+        <!-- INTRO / CONTEXT -->
+        <div
+          style="
+            border-left: 4px solid #f39c12;
+            padding-left: 20px;
+            margin-bottom: 30px;
+          "
+        >
+          <h2 style="color: #2d3b45; margin-top: 0">The Nesting Doll</h2>
+          <p style="font-size: 1.1rem; margin-bottom: 15px">
+            <strong>Nesting</strong> is where we put an
+            <code>if</code> statement <em>within</em> another
+            <code>if</code> statement using the power of indenting.
+          </p>
+          <p>
+            Think of it like a decision tree: "If I am hungry (Yes)... then: Do
+            I want pizza (Yes/No)?" You only ask the second question if the
+            first one is true! 🐦🥚
+          </p>
+        </div>
+
+        <!-- VIDEO & RESOURCE LINKS -->
+        <div
+          style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=Abk1jPdnMIc"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #c4302b;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">▶</span> Watch
+            Day 7 Tutorial
+          </a>
+          <a
+            href="https://replit.com/@jiansuphd/day-7100-days"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #0e1525;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">&lt;/&gt;</span>
+            Open Day 7 Replit
+          </a>
+        </div>
+
+        <!-- CONCEPT BLOCK: INDENTATION POWER -->
+        <div
+          style="
+            background-color: #fef5e7;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+          "
+        >
+          <h3
+            style="
+              color: #d35400;
+              margin-top: 0;
+              border-bottom: 1px solid #f5cba7;
+              padding-bottom: 10px;
+            "
+          >
+            👉 The Indentation Rule
+          </h3>
+          <p>
+            The second <code>if</code> statement (the baby bird) must be
+            <strong>indented</strong> inside the first one.
+          </p>
+          <p>
+            Any <code>print</code> statement belonging to that second
+            <code>if</code> must be indented <strong>one more time</strong>.
+          </p>
+          <div
+            style="
+              background: white;
+              padding: 15px;
+              border: 1px dashed #d35400;
+              border-radius: 5px;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Pay close attention to the vertical lines in your code editor. They
+            show you which statement belongs to which block!
+          </div>
+        </div>
+
+        <!-- SYNTAX PREVIEW SECTION -->
+        <div style="margin-bottom: 40px">
+          <h2
+            style="
+              color: #2d3b45;
+              border-bottom: 1px solid #ddd;
+              padding-bottom: 10px;
+            "
+          >
+            💻 Syntax: TV Show Logic
+          </h2>
+          <p>
+            Delete any old code in <code>main.py</code> and try this example. Do
+            you notice the second <code>if</code> statement about
+            <code>fave_character</code>?
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 20px">
+            <!-- Code Block -->
+            <div
+              style="
+                flex: 2;
+                min-width: 300px;
+                background-color: #1c2333;
+                color: #dcdcdc;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: 'Consolas', 'Monaco', monospace;
+                font-size: 0.95rem;
+                border: 1px solid #444;
+              "
+            >
+              <span style="color: #9cdcfe">tv_show</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"What is your favorite tv show? "</span
+              >)<br />
+              <span style="color: #c586c0">if</span>
+              <span style="color: #9cdcfe">tv_show</span> ==
+              <span style="color: #ce9178">"peppa pig"</span>:<br />
+              &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Ugh, why?"</span
+              >)<br />
+              &nbsp;&nbsp;<span style="color: #9cdcfe">fave_character</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"Who is your favorite character? "</span
+              >)<br />
+              &nbsp;&nbsp;<span style="color: #c586c0">if</span>
+              <span style="color: #9cdcfe">fave_character</span> ==
+              <span style="color: #ce9178">"daddy pig"</span>:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #dcdcaa">print</span
+              >(<span style="color: #ce9178">"Right answer"</span>)<br />
+              &nbsp;&nbsp;<span style="color: #c586c0">else</span>:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #dcdcaa">print</span
+              >(<span style="color: #ce9178"
+                >"Nah, Daddy Pig's the greatest"</span
+              >)<br />
+              <span style="color: #c586c0">elif</span>
+              <span style="color: #9cdcfe">tv_show</span> ==
+              <span style="color: #ce9178">"paw patrol"</span>:<br />
+              &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Aww, sad times"</span
+              >)<br />
+              <span style="color: #c586c0">else</span>:<br />
+              &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Yeah, that's cool and all..."</span
+              >)
+            </div>
+
+            <!-- Explanation -->
+            <div style="flex: 1; min-width: 250px; font-size: 0.95rem">
+              <p><strong>Code Analysis:</strong></p>
+              <ul style="padding-left: 20px">
+                <li style="margin-bottom: 10px">
+                  <strong>First Layer:</strong> We check the TV show first.
+                </li>
+                <li style="margin-bottom: 10px">
+                  <strong>Second Layer:</strong> ONLY if the show is "peppa
+                  pig", do we ask about the character.
+                </li>
+                <li style="margin-bottom: 10px">
+                  <strong>The Indent:</strong> Notice how the
+                  <code>input</code> for <code>fave_character</code> is
+                  indented? It lives inside the first <code>if</code>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHALLENGE SECTION -->
+        <div
+          style="
+            margin-top: 40px;
+            border-top: 2px dashed #ccc;
+            padding-top: 30px;
+          "
+        >
+          <h2 style="color: #d35400; margin-top: 0">
+            🔥 Day 7 Challenge: Fake Fan Finder
+          </h2>
+          <p>
+            I highly doubt your favorite TV shows are actually Peppa Pig and Paw
+            Patrol (no judgment if they are!).
+          </p>
+          <p>
+            <strong>Your Mission:</strong> Copy the code above and change it to
+            match your actual favorite TV shows and characters.
+          </p>
+          <ul style="margin-bottom: 20px">
+            <li>
+              Ask what show they like (e.g., "One Piece", "Stranger Things").
+            </li>
+            <li>
+              If they name your show, ask them who the main character is to
+              prove they are a real fan!
+            </li>
+            <li>Nest your <code>if</code> statements correctly.</li>
+          </ul>
+
+          <div
+            style="
+              background-color: #fff8e1;
+              padding: 20px;
+              border-radius: 8px;
+              border: 1px solid #ffe0b2;
+            "
+          >
+            <strong>The Logic Structure:</strong>
+            <pre
+              style="
+                margin: 15px 0 0 0;
+                font-family: 'Consolas', monospace;
+                white-space: pre-wrap;
+                color: #555;
+              "
+            >
+show = input
+if show == "My Favorite"
+  character = input
+  if character == "The Right One"
+    print "You are a true fan!"
+  else
+    print "Fake fan detected!"
+elif show == "Another Show"
+  print "Aww, sad times"
+else
+  print "Never heard of it."
+</pre
+            >
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div style="margin-top: 40px; text-align: center">
+          <h3 style="color: #2d3b45">Ready for more?</h3>
+          <p>
+            Nesting is a powerful tool. Make sure your indentation is perfect!
+          </p>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+              display: inline-block;
+              background-color: #f39c12;
+              color: white;
+              padding: 10px 25px;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              margin-top: 10px;
+            "
+            >Mark Day 7 Complete &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
