@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4 — Story Simulator</title>
+  </head>
+  <body>
+    <!-- MAIN CONTAINER: Centered, max-width for readability -->
+    <div
+      style="
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+      "
+    >
+      <!-- BACK LINK -->
+      <div style="padding: 10px 0">
+        <a
+          href="../index.html"
+          style="text-decoration: none; color: #0056b3; font-weight: 500"
+          >&larr; Back to Home</a
+        >
+      </div>
+
+      <!-- HEADER BANNER -->
+      <div
+        style="
+          background-color: #2d3b45;
+          color: #ffffff;
+          padding: 20px;
+          border-radius: 8px 8px 0 0;
+          border-bottom: 5px solid #e74c3c;
+        "
+      >
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <div>
+            <h1 style="margin: 0; font-size: 1.8rem; font-weight: 600">
+              Day 4: Story Simulator
+            </h1>
+            <p style="margin: 5px 0 0 0; font-size: 1.1rem; opacity: 0.9">
+              Choose Your Own Adventure
+            </p>
+          </div>
+          <div
+            style="
+              background-color: #e74c3c;
+              padding: 5px 15px;
+              border-radius: 20px;
+              font-weight: bold;
+              font-size: 0.9rem;
+            "
+          >
+            Week 1
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT WRAPPER -->
+      <div
+        style="
+          border: 1px solid #e0e0e0;
+          border-top: none;
+          border-radius: 0 0 8px 8px;
+          padding: 30px;
+          background-color: #ffffff;
+        "
+      >
+        <!-- INTRO / CONTEXT -->
+        <div
+          style="
+            border-left: 4px solid #e74c3c;
+            padding-left: 20px;
+            margin-bottom: 30px;
+          "
+        >
+          <h2 style="color: #2d3b45; margin-top: 0">The Power of Story</h2>
+          <p style="font-size: 1.1rem; margin-bottom: 15px">
+            Everyone loves a good story! Well, today you're going to create your
+            own adventure story that places your user in the role of the main
+            character.
+          </p>
+          <p>
+            We'll even customize the story to suit their interests by asking
+            them questions first! 🦸‍♀️🦹‍♂️
+          </p>
+        </div>
+
+        <!-- VIDEO & RESOURCE LINKS -->
+        <div
+          style="display: flex; gap: 15px; margin-bottom: 40px; flex-wrap: wrap"
+        >
+          <a
+            href="https://www.youtube.com/watch?v=oakgvGNYQoQ"
+            target="_blank"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #c4302b;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">▶</span> Watch
+            Day 4 Tutorial
+          </a>
+          <a
+            href="https://replit.com/@jiansuphd/day4100-days"
+            target="_blank"
+            style="
+              flex: 1;
+              min-width: 250px;
+              background-color: #0e1525;
+              color: white;
+              padding: 15px;
+              border-radius: 6px;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-weight: bold;
+            "
+          >
+            <span style="margin-right: 10px; font-size: 1.2rem">&lt;/&gt;</span>
+            Open Day 4 Replit
+          </a>
+        </div>
+
+        <!-- CONCEPT BLOCK: THE BLUEPRINT -->
+        <div
+          style="
+            background-color: #ffebee;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+          "
+        >
+          <h3
+            style="
+              color: #c0392b;
+              margin-top: 0;
+              border-bottom: 1px solid #e6b0aa;
+              padding-bottom: 10px;
+            "
+          >
+            🗺️ The Blueprint
+          </h3>
+          <p>To build a dynamic story, we need to follow two main steps:</p>
+          <ol style="margin-left: 10px">
+            <li style="margin-bottom: 10px">
+              <strong>Gather Intelligence:</strong> Ask your users to list a
+              bunch of information about themselves: things they like, things
+              they hate, names of family and friends... keep it wacky!
+            </li>
+            <li style="margin-bottom: 10px">
+              <strong>Weave the Tale:</strong> Construct your story using the
+              variables you created. Remember concatenation and the use of
+              commas <code>,</code> and quotes <code>""</code>.
+            </li>
+          </ol>
+          <div
+            style="
+              background: white;
+              padding: 15px;
+              border: 1px dashed #c0392b;
+              border-radius: 5px;
+              font-weight: bold;
+              color: #555;
+            "
+          >
+            Tip: Make sure to only work one paragraph at a time. Otherwise,
+            things could get a bit messy! Using <code>print()</code> with
+            nothing inside can help add blank lines for spacing.
+          </div>
+        </div>
+
+        <!-- SYNTAX PREVIEW SECTION -->
+        <div style="margin-bottom: 40px">
+          <h2
+            style="
+              color: #2d3b45;
+              border-bottom: 1px solid #ddd;
+              padding-bottom: 10px;
+            "
+          >
+            💻 Syntax: Building the Simulator
+          </h2>
+          <p>
+            Here is the code structure we are aiming for today. Delete any old
+            code in <code>main.py</code> and try this:
+          </p>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 20px">
+            <!-- Code Block -->
+            <div
+              style="
+                flex: 2;
+                min-width: 300px;
+                background-color: #1c2333;
+                color: #dcdcdc;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: 'Consolas', 'Monaco', monospace;
+                font-size: 0.9rem;
+                border: 1px solid #444;
+              "
+            >
+              <span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Welcome to your Adventure Story Simulator."</span
+              >)<br />
+              <span style="color: #dcdcaa">print</span>()<br />
+              <span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"I am going to ask you a bunch of questions and then create an
+                epic story with you as the star."</span
+              >)<br />
+              <span style="color: #dcdcaa">print</span>()<br /><br />
+
+              <span style="color: #9cdcfe">name</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"What is your name? "</span
+              >)<br />
+              <span style="color: #9cdcfe">enemyName</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"What is your enemy's name? "</span
+              >)<br />
+              <span style="color: #9cdcfe">superPower</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"What is your super power? "</span
+              >)<br /><br />
+
+              <span style="color: #dcdcaa">print</span>()<br />
+              <span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Hello"</span
+              >, <span style="color: #9cdcfe">name</span>,
+              <span style="color: #ce9178">"Your ability to"</span>,
+              <span style="color: #9cdcfe">superPower</span>,
+              <span style="color: #ce9178"
+                >"will make sure you never have to look at"</span
+              >, <span style="color: #9cdcfe">enemyName</span>,
+              <span style="color: #ce9178">"again!"</span>)
+            </div>
+
+            <!-- Explanation -->
+            <div style="flex: 1; min-width: 250px; font-size: 0.95rem">
+              <p><strong>Code Analysis:</strong></p>
+              <ul style="padding-left: 20px">
+                <li style="margin-bottom: 10px">
+                  <strong>Empty Print:</strong> <code>print()</code> creates a
+                  blank line to separate text.
+                </li>
+                <li style="margin-bottom: 10px">
+                  <strong>Variables:</strong> We capture user answers into
+                  descriptive variables like <code>enemyName</code>.
+                </li>
+                <li style="margin-bottom: 10px">
+                  <strong>Concatenation:</strong> We use commas inside the final
+                  <code>print()</code> to stitch the text and variables together
+                  seamlessly.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHALLENGE SECTION -->
+        <div
+          style="
+            margin-top: 40px;
+            border-top: 2px dashed #ccc;
+            padding-top: 30px;
+          "
+        >
+          <h2 style="color: #c0392b; margin-top: 0">
+            🔥 Day 4 Challenge: Your Own Adventure
+          </h2>
+          <p>
+            Your task is to create a unique story. It can be about anything you
+            want, but it must use variables to fill in the blanks!
+          </p>
+
+          <div
+            style="
+              background-color: #fff8e1;
+              padding: 20px;
+              border-radius: 8px;
+              border: 1px solid #ffe0b2;
+            "
+          >
+            <strong>Example Output to Aim For:</strong>
+            <pre
+              style="
+                margin: 15px 0 0 0;
+                font-family: 'Consolas', monospace;
+                white-space: pre-wrap;
+                color: #555;
+              "
+            >
+What is your name? > David
+What is your superpower? > Invisibility
+Where do you live? > The Moon
+What is your favorite food? > Tacos
+
+Hello David! Your ability to Invisibility will make sure you never have to look at your enemy again. Go eat Tacos as you walk down the streets of The Moon and use Invisibility for good and not evil!
+</pre
+            >
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div style="margin-top: 40px; text-align: center">
+          <h3 style="color: #2d3b45">Story Complete?</h3>
+          <p>
+            Share your epic adventure code with the community so others can play
+            it!
+          </p>
+          <a
+            href="#"
+            style="
+              display: inline-block;
+              background-color: #e74c3c;
+              color: white;
+              padding: 10px 25px;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              margin-top: 10px;
+            "
+            >Mark Day 4 Complete &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
