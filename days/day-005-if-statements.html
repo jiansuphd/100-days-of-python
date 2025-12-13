@@ -20,6 +20,7 @@
       <div style="padding: 10px 0">
         <a
           href="../index.html"
+          target="_blank"
           style="text-decoration: none; color: #0056b3; font-weight: 500"
           >&larr; Back to Home</a
         >
@@ -206,4 +207,143 @@
                 padding: 15px;
                 border-radius: 8px;
                 font-family: 'Consolas', 'Monaco', monospace;
-                font
+                font-size: 0.95rem;
+                border: 1px solid #444;
+              "
+            >
+              <span style="color: #9cdcfe">myName</span> =
+              <span style="color: #dcdcaa">input</span>(<span
+                style="color: #ce9178"
+                >"What's your name?: "</span
+              >)<br /><br />
+              <span style="color: #c586c0">if</span>
+              <span style="color: #9cdcfe">myName</span> ==
+              <span style="color: #ce9178">"David"</span>:<br />
+              &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Welcome Dude!"</span
+              >)<br />
+              &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"You're the baldest dude I've seen"</span
+              >)<br />
+              <span style="color: #c586c0">else</span>:<br />
+              &nbsp;&nbsp;<span style="color: #dcdcaa">print</span>(<span
+                style="color: #ce9178"
+                >"Who on earth are you?!"</span
+              >)
+            </div>
+
+            <!-- Explanation -->
+            <div style="flex: 1; min-width: 250px; font-size: 0.95rem">
+              <p><strong>How it works:</strong></p>
+              <ul style="padding-left: 20px">
+                <li style="margin-bottom: 10px">
+                  <strong>The Condition:</strong> Checks if the name is "David".
+                </li>
+                <li style="margin-bottom: 10px">
+                  <strong>The Indent:</strong> To create a <code>print</code>
+                  statement related to the <code>if</code>, you <em>must</em> go
+                  to the next line and indent <strong>once</strong>.
+                </li>
+                <li style="margin-bottom: 10px">
+                  <strong>The Else:</strong> If the condition is <em>not</em>
+                  met, the computer jumps to the <code>else</code> block.
+                </li>
+                <li style="margin-bottom: 10px">
+                  <strong>Alignment:</strong> <code>else</code> must be
+                  unindented, lining up perfectly with <code>if</code>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHALLENGE SECTION -->
+        <div
+          style="
+            margin-top: 40px;
+            border-top: 2px dashed #ccc;
+            padding-top: 30px;
+          "
+        >
+          <h2 style="color: #d35400; margin-top: 0">
+            🔥 Day 5 Challenge: Avengers Identity
+          </h2>
+          <p>
+            Let's build a program that finds out which Avengers character your
+            user is!
+          </p>
+          <p>
+            Ask them questions, check their answers with <code>if</code> statements, and reveal their superhero identity.
+          </p>
+
+          <div
+            style="
+              background-color: #fff8e1;
+              padding: 20px;
+              border-radius: 8px;
+              border: 1px solid #ffe0b2;
+            "
+          >
+            <strong>Your Goal Code:</strong>
+            <pre
+              style="
+                margin: 15px 0 0 0;
+                font-family: 'Consolas', monospace;
+                white-space: pre-wrap;
+                color: #555;
+              "
+            >
+print("Which character are you from 'Avengers?'")
+print()
+print("Answer these questions and let's find out.")
+print()
+print("Please use Y or N for yes and no.")
+
+likeGreen = input("Do you like the color green?: ")
+if likeGreen == "Y":
+  print("You must be the Hulk!")
+
+IronIsCool = input("Do you think building robots is cool?: ")  
+if IronIsCool == "Y":
+  print("You must be Iron Man. Cool suit!")
+
+TimeTravel = input("Do you like traveling through time?: ")  
+if TimeTravel == "Y":
+  print("You must be Captain America!")
+
+Strong = input("Are you super strong?: ")
+if Strong == "Y":
+  print("You have got to be Thor!")
+else:
+  print("I guess you are not like anyone from 'Avengers.'")
+</pre
+            >
+          </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div style="margin-top: 40px; text-align: center">
+          <h3 style="color: #2d3b45">Done?</h3>
+          <p>Share your code and see if your friends are Thor or Hulk!</p>
+          <a
+            href="#"
+            target="_blank"
+            style="
+              display: inline-block;
+              background-color: #e74c3c;
+              color: white;
+              padding: 10px 25px;
+              text-decoration: none;
+              border-radius: 5px;
+              font-weight: bold;
+              margin-top: 10px;
+            "
+            >Mark Day 5 Complete &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
